@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="socialProtection">
+        <description>Social Protection</description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>model.entity.VeteranEntity</class>
+        <class>model.entity.DistrictEntity</class>
+        <class>model.entity.DocumentEntity</class>
+        <class>model.entity.FamilyMemberEntity</class>
+        <class>model.entity.MilitaryTermEntity</class>
+        <class>model.entity.CategoryEntity</class>
+        <class>model.entity.DisplacementEntity</class>
+        <class>model.entity.HonorEntity</class>
+        <class>model.entity.RankEntity</class>
+        <class>model.entity.SubcategoryEntity</class>
+        <class>model.entity.VeteranHonorEntity</class>
+        <class>model.entity.WorkPlaceEntity</class>
+        <class>model.entity.VeteranWoundEntity</class>
+        <class>model.entity.WoundTypeEntity</class>
+        <class>model.entity.WoundDisabilityEntity</class>
+        <class>model.entity.UserEntity</class>
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <!--<property name="hibernate.hbm2ddl.auto" value="update"/>-->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/social_protection?useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
+            <property name="hibernate.enable_lazy_load_no_trans" value="true"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>

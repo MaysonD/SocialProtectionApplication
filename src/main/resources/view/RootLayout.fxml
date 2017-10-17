@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RootLayoutController">
+    <center>
+        <ScrollPane BorderPane.alignment="CENTER" />
+    </center>
+   <top>
+          <MenuBar prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <menus>
+                  <Menu mnemonicParsing="false" text="Сохранить">
+                      <items>
+                          <MenuItem fx:id="saveToWord" mnemonicParsing="false" onAction="#handleSaveToWord" text="Word" />
+                          <MenuItem fx:id="exportToExcel" mnemonicParsing="false" onAction="#handleSaveToExcel" text="Excel" />
+                      </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Справочники">
+                      <items>
+                          <MenuItem fx:id="addHonorMenuItem" mnemonicParsing="false" onAction="#handleAddHonorMenuItem" text="Пополнить справочник наград" />
+                          <MenuItem fx:id="addWoundTypeMenuItem" mnemonicParsing="false" onAction="#handleAddWoundTypeMenuItem" text="Пополнить справочник ранений" />
+                          <MenuItem fx:id="addRankMenuItem" mnemonicParsing="false" onAction="#handleAddRankMenuItem" text="Пополнить справочник званий" />
+                          <MenuItem fx:id="addWoundDisabilityMenuItem" mnemonicParsing="false" onAction="#handleAddWoundDisabilityMenuItem" text="Пополнить справочник инвалидностей" />
+                      </items>
+                  </Menu>
+              </menus>
+          </MenuBar>
+   </top>
+</BorderPane>

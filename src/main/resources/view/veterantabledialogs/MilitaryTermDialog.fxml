@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="392.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="controller.dialogtables.MilitaryTermDialogController">
+    <children>
+        <Label layoutX="35.0" layoutY="64.0" text="Воинская часть"/>
+        <Label layoutX="36.0" layoutY="114.0" text="Страна службы"/>
+        <Label layoutX="35.0" layoutY="168.0" text="Насленный пункт"/>
+        <Label layoutX="35.0" layoutY="215.0" text="Начало службы"/>
+        <Label layoutX="38.0" layoutY="265.0" text="Конец службы"/>
+        <TextField fx:id="militaryUnitField" layoutX="161.0" layoutY="60.0"/>
+        <TextField fx:id="countryField" layoutX="161.0" layoutY="110.0"/>
+        <TextField fx:id="localityField" layoutX="161.0" layoutY="164.0"/>
+        <DatePicker fx:id="startOfServiceDate" layoutX="161.0" layoutY="211.0" prefHeight="25.0" prefWidth="149.0"/>
+        <DatePicker fx:id="endOfServiceDate" layoutX="161.0" layoutY="261.0" prefHeight="25.0" prefWidth="149.0"/>
+        <Button fx:id="saveButton" layoutX="161.0" layoutY="346.0" mnemonicParsing="false" onAction="#saveButtonClick"
+                text="Сохранить"/>
+        <Button fx:id="cancelButton" layoutX="252.0" layoutY="346.0" mnemonicParsing="false"
+                onAction="#cancelButtonClick" text="Отмена"/>
+    </children>
+</AnchorPane>

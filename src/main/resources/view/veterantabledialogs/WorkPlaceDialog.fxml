@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="328.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="controller.dialogtables.WorkPlaceDialogController">
+    <children>
+        <Label layoutX="35.0" layoutY="64.0" text="Населенный пункт"/>
+        <Label layoutX="36.0" layoutY="114.0" text="Организация "/>
+        <Label layoutX="35.0" layoutY="168.0" text="Должность"/>
+        <TextField fx:id="localityField" layoutX="161.0" layoutY="60.0"/>
+        <TextField fx:id="organizationField" layoutX="161.0" layoutY="110.0"/>
+        <TextField fx:id="positionField" layoutX="161.0" layoutY="164.0"/>
+        <Button fx:id="saveButton" layoutX="160.0" layoutY="289.0" mnemonicParsing="false" onAction="#saveButtonClick"
+                text="Сохранить"/>
+        <Button fx:id="cancelButton" layoutX="251.0" layoutY="289.0" mnemonicParsing="false"
+                onAction="#cancelButtonClick" text="Отмена"/>
+        <Label layoutX="34.0" layoutY="224.0" text="Номер отдела кадров"/>
+        <TextField fx:id="departmentPhoneNumberField" layoutX="160.0" layoutY="220.0"/>
+    </children>
+</AnchorPane>
